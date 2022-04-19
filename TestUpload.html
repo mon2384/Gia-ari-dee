@@ -1,0 +1,14 @@
+<html>
+<body>
+<p id="demo"></p>
+<script>
+    
+var text = "The Observer pattern Suggests That you Add Subscription mechanism To The publisher Class So Individual Objects Can Subscribe To Or Unsubscribe from Stream Of Events Coming from That publisher Fear not Everything Isn’t As Complicated As It Sounds. In Reality This mechanism Consists Of First An Array field for Storing list Of References To subscribe Objects And Second Several public methods which Allow Adding Subscribers to And Removing tHem from That list Observer Is Behavioral design pattern That lets you define Subscription mechanism To notify multiple Ojects About Any events That Happen To The Object They’re Observing Now whenever An Important Event Happens To The publisher It goes Over Its Subscribers And cAlls The Specific notification method On Their Objects Real Apps might hAve dozens Of differaent Subscriber classes That aRe Interested In Tracking Events Of The sAme publisher Class. You wouldn’t want To Couple tHe publisher To All Of Those Classes. Besides, you might not Even know About Some Of Them Beforehand If your publisher Class Is Supposed To Be Used By Other people";
+var result = text.match(/([^ahote ircbus])\w+/g);
+result = result.toString();
+console.log(result.toString());
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
